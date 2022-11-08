@@ -22,7 +22,7 @@
         id="sidebar">
         <a href="" class="navbar-brand text-light mt-5">
             <div class="display-5 font-weight-bold">
-                <img class="logo" src="about-me-logo.png" alt="">
+                <img class="logo" src="images/about-me-logo.png" alt="">
             </div>
         </a>
         <ul class="navbar-nav d-flex flex-column mt-5 w-100 justify-content-center">
@@ -39,17 +39,25 @@
                 <a href="#contact-section" class="nav-link  pl-4 text-center">Contact</a>
             </li>
         </ul>
-        <div class="icons d-flex gap-3    ">
-            <i class="bi bi-github fs-3"></i>
-            <i class="bi bi-linkedin fs-3"></i>
+        <div class="icons d-flex gap-3 flex-column">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                <title>GitHub</title>
+                <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                <title>LinkedIn</title>
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+            </svg>
         </div>
     </nav>
     <section class=" my-container active-cont ">
-        <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-smooth-scroll="true" class="border border-success"
-            tabindex="0">
-            <!-- <button class="btn my-4" id="menu-btn">Toggle Sidebar</button> -->
-            <!-- <h1>Bootstrap 5 Sidebar Navigation</h1> -->
-            <!-- <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"> -->
+        <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-smooth-scroll="true" class="" tabindex="0">
             <div id="home-section" class="vh-100 text-dark d-flex flex-column justify-content-center">
                 <div class="text ms-5">
                     <h2 class="fs-1 fw-bold m-0">Hi,</h2>
@@ -58,144 +66,148 @@
                     <button type="button" class="btn btn-primary">Contact Me</button>
                 </div>
             </div>
-            <div id="projects-section" class="min-vh-100 text-dark border border-primary d-flex flex-column">
-                <div class="projects-text text">
-                    <h1 class="portfolio-header">My Portfolio</h1>
-                    <p class="">A group of projects that I have created independently since I began
-                        self-learning.
-                        Each project builds upon my foundation in front-end development.</p>
+
+            <div id="projects-section" class="min-vh-100 text-dark d-flex flex-column align-items-center">
+                <div class="row text projects-text">
+                    <h1 class="portfolio-header fw-bold">My Portfolio</h1>
+                    <p class=" fw-bold m-0 ">A group of projects that I have created independently since I began
+                        self-learning. Each project builds upon my foundation in front-end development.</p>
                 </div>
-
-                <!-- <div class=" row d-flex align-items-center" id="cards">
-                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src=" avataaars.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="avataaars.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6  col-xl-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="avataaars.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div> -->
-                <div class="row row-cols-1 row-cols-md-3 g-4" id="cards">
+                <div class="card-group row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="cards">
                     <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card text-bg-dark ">
+                            <img src="images/tic-tac-toe-pic.PNG" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This card has supporting text below as a natural lead-in to
                                     additional content.</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <small class="text-muted">JS • HTML5 • CSS</small>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card text-bg-dark">
+                            <img src="images/etch-a-sketch_pic.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <small class="text-muted">JS • HTML5 • CSS</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-bg-dark">
+                            <img src="images/calc_pic.PNG" class="card-img-top border" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">T</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">JS • HTML5 • CSS</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="skills-section" class="min-vh-100 text-dark row d-flex flex-column flex-md-row">
+
+                <div class="skills-text text col">
+                    <h2>Skills & Experience</h2>
+                    <div>
+                        <p>I began my journey a few months ago after discovering a passion for web development. As of
+                            now, I have created projects that involve semantic HTML, pure CSS, and vanilla Javascript.
+                            Most
+                            importantly, I have been able to apply more valuable skills including debugging, problem
+                            solving, and creative thinking.</p>
+
+                        <p> Currently, I am a web development fellow at The Knowledge House developing my technical and
+                            professional skills. During my one-year fellowship, I will create websites and applications
+                            with
+                            React.js, construct a database with MongoDB and MySQL, produce a backend API with Express
+                            and
+                            Node.js, and build upon my knowledge of HTML, CSS, and Javascript.</p>
+
+                        <p>As I continue to learn and apply my skills, I would love for you to visit my LinkedIn and
+                            reach
+                            out!</p>
+                    </div>
+                </div>
+                <div class="skills col md-mt-0 md-pt-0">
+                    <div class="skill">
+                        <p>Javascript</p>
+                        <footer>
+                            <div class="data-js" data-width="95%" style="width: 85%;"></div>
+                        </footer>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <footer>
+                            <div class="data-css" data-width="95%" style="width: 80%;"></div>
+                        </footer>
+                    </div>
+                    <div class="skill">
+                        <p>HTML</p>
+                        <footer>
+                            <div class="data-html" data-width="95%" style="width: 85%;"></div>
+                        </footer>
+                    </div>
+                    <div class="skill">
+                        <p>React.js</p>
+                        <footer>
+                            <div class="data-react" data-width="95%" style="width: 70%;"></div>
+                        </footer>
+                    </div>
+                    <div class="skill">
+                        <p>Git</p>
+                        <footer>
+                            <div class="data-git" data-width="95%" style="width: 85%;"></div>
+                        </footer>
+                    </div>
+                    <div class="skill">
+                        <p>Bootstrap</p>
+                        <footer>
+                            <div class="data-bs" data-width="95%" style="width: 80%;"></div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-section" class="vh-100 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Ipsam facilis inventore
+                harum,
+                architecto libero recusandae porro doloremque sunt cum consectetur, autem, vitae ea nihil sapiente
+                voluptas
+                at aut suscipit eos? Sapiente quam culpa aliquam
+                itaque debitis nihil doloremque rem! Praesentium quae, facere nobis impedit quisquam aliquid maxime
+                error?
+                Totam eaque earum fuga aliquam sequi excepturi illum optio quas tempora ea! Eum perspiciatis
+                accusantium
+                distinctio eveniet consequatur
+                sint illo officiis? Saepe dolores fugiat rerum, voluptatem sunt culpa nihil accusantium voluptates
+                unde
+                hic
+                magnam quos est perspiciatis recusandae incidunt quod laborum vitae. Harum modi inventore ea odit
+                eaque
+                ut
+                maiores voluptate nihil
+                aspernatur voluptatibus exercitationem ipsa nam animi neque tempore, eligendi, repellendus
+                praesentium
+                ex
+                voluptatum? Magni laboriosam nemo, assumenda veniam aperiam eum! Eos, ipsum. Eum illo quos quo
+                tempora
+                excepturi reprehenderit numquam
+                voluptas! Blanditiis autem optio labore quisquam culpa, tempora minus eum repudiandae ea voluptatem
+                quia
+                obcaecati velit cum dolorum esse dolorem!</div>
         </div>
-        <div id="skills-section" class="vh-100 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit.
-            Ipsam
-            facilis inventore harum,
-            architecto libero recusandae porro doloremque sunt cum consectetur, autem, vitae ea nihil sapiente
-            voluptas
-            at aut suscipit eos? Sapiente quam culpa aliquam
-            itaque debitis nihil doloremque rem! Praesentium quae, facere nobis impedit quisquam aliquid maxime
-            error?
-            Totam eaque earum fuga aliquam sequi excepturi illum optio quas tempora ea! Eum perspiciatis
-            accusantium
-            distinctio eveniet consequatur
-            sint illo officiis? Saepe dolores fugiat rerum, voluptatem sunt culpa nihil accusantium voluptates
-            unde
-            hic
-            magnam quos est perspiciatis recusandae incidunt quod laborum vitae. Harum modi inventore ea odit
-            eaque
-            ut
-            maiores voluptate nihil
-            aspernatur voluptatibus exercitationem ipsa nam animi neque tempore, eligendi, repellendus
-            praesentium
-            ex
-            voluptatum? Magni laboriosam nemo, assumenda veniam aperiam eum! Eos, ipsum. Eum illo quos quo
-            tempora
-            excepturi reprehenderit numquam
-            voluptas! Blanditiis autem optio labore quisquam culpa, tempora minus eum repudiandae ea voluptatem
-            quia
-            obcaecati velit cum dolorum esse dolorem!</div>
-        <div id="contact-section" class="vh-100 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit.
-            Ipsam facilis inventore
-            harum,
-            architecto libero recusandae porro doloremque sunt cum consectetur, autem, vitae ea nihil sapiente
-            voluptas
-            at aut suscipit eos? Sapiente quam culpa aliquam
-            itaque debitis nihil doloremque rem! Praesentium quae, facere nobis impedit quisquam aliquid maxime
-            error?
-            Totam eaque earum fuga aliquam sequi excepturi illum optio quas tempora ea! Eum perspiciatis
-            accusantium
-            distinctio eveniet consequatur
-            sint illo officiis? Saepe dolores fugiat rerum, voluptatem sunt culpa nihil accusantium voluptates
-            unde
-            hic
-            magnam quos est perspiciatis recusandae incidunt quod laborum vitae. Harum modi inventore ea odit
-            eaque
-            ut
-            maiores voluptate nihil
-            aspernatur voluptatibus exercitationem ipsa nam animi neque tempore, eligendi, repellendus
-            praesentium
-            ex
-            voluptatum? Magni laboriosam nemo, assumenda veniam aperiam eum! Eos, ipsum. Eum illo quos quo
-            tempora
-            excepturi reprehenderit numquam
-            voluptas! Blanditiis autem optio labore quisquam culpa, tempora minus eum repudiandae ea voluptatem
-            quia
-            obcaecati velit cum dolorum esse dolorem!</div>
         </div>
+
     </section>
 
 
