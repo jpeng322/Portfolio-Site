@@ -14,6 +14,11 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 
@@ -54,23 +59,53 @@
                 <rect x="2" y="9" width="4" height="12"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
             </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-message-square">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <path
+                    d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z"
+                    fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                <path d="M256 56v120a32 32 0 0032 32h120M176 288h160M176 368h160" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            </svg>
         </div>
     </nav>
     <section class=" my-container active-cont ">
         <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-smooth-scroll="true" class="" tabindex="0">
-            <div id="home-section" class="vh-100 text-dark d-flex flex-column justify-content-center">
-                <div class="text ms-5">
-                    <h2 class="fs-1 fw-bold m-0">Hi,</h2>
-                    <h2 class="fs-1 fw-bold m-0 ">I'm Jacky,</h2>
-                    <h2 class="fs-1 fw-bold m-0 ">aspiring web developer</h2>
-                    <button type="button" class="btn btn-primary">Contact Me</button>
+            <div id="home-section"
+                class="min-vh-100 text-dark d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5 gap-xxl-0 ">
+                <!-- <div class="row"> -->
+                <div class="text col col-md-10 col-lg-6 col-xl-5 d-flex flex-column ">
+                    <p class="first-line col col-md-12 col-xl-10  fw-bold">Hi, my name is </p>
+                    <h2 class="second-line col col-md-12 col-xl-10  fw-bold">Jacky Peng</h2>
+                    <!-- <h2 class="third-line col col-md-12 fw-bold ">currently building</h2> -->
+                    <p class="fourth-line col col-md-12 col-xl-10 fw-semibold"> I am an aspiring web developer focused
+                        on creating
+                        dynamic
+                        websites
+                        and
+                        applications
+                        utilizing
+                        HTML, CSS, Javascript, as well as the MERN stack. I also hope to apply my previous skills in the
+                        healthcare field in conjunction with my interest in programming to deliver objectives through
+                        communication and teamwork. </p>
+                    <button id="home-btn" type="button"
+                        class="btn col-md-6 col-lg-5 col-xl-4 btn-primary align-self-start m-lg-0">Contact
+                        Me</button>
                 </div>
+                <div class="col col-md-10 col-lg-6 col-xl-6 col-xxl-5">
+                    <img src="images/pic-of-me.jpg" class="img-fluid" alt="...">
+                </div>
+                <!-- </div> -->
             </div>
 
             <div id="projects-section" class="min-vh-100 text-dark d-flex flex-column align-items-center">
                 <div class="row text projects-text">
                     <h1 class="portfolio-header fw-bold">My Portfolio</h1>
-                    <p class=" fw-bold m-0 ">A group of projects that I have created independently since I began
+                    <p class=" fw-bold ">A group of projects that I have created independently since I began
                         self-learning. Each project builds upon my foundation in front-end development.</p>
                 </div>
                 <div class="card-group row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="cards">
@@ -115,11 +150,12 @@
                 </div>
             </div>
 
-            <div id="skills-section" class="min-vh-100 text-dark row d-flex flex-column flex-md-row">
+            <div id="skills-section"
+                class="min-vh-100 text-dark row d-flex flex-column flex-lg-row align-items-center justify-content-center">
 
-                <div class="skills-text text col">
-                    <h2>Skills & Experience</h2>
-                    <div>
+                <div class="skills-text text col col-md-10 col-lg-6 col-xl-4">
+                    <h2 class="fw-bold">Skills & Experience</h2>
+                    <div class="experience">
                         <p>I began my journey a few months ago after discovering a passion for web development. As of
                             now, I have created projects that involve semantic HTML, pure CSS, and vanilla Javascript.
                             Most
@@ -138,7 +174,7 @@
                             out!</p>
                     </div>
                 </div>
-                <div class="skills col md-mt-0 md-pt-0">
+                <div class="skills col col-xl-6  md-mt-0 md-pt-0">
                     <div class="skill">
                         <p>Javascript</p>
                         <footer>
@@ -204,7 +240,8 @@
                 excepturi reprehenderit numquam
                 voluptas! Blanditiis autem optio labore quisquam culpa, tempora minus eum repudiandae ea voluptatem
                 quia
-                obcaecati velit cum dolorum esse dolorem!</div>
+                obcaecati velit cum dolorum esse dolorem!
+            </div>
         </div>
         </div>
 
