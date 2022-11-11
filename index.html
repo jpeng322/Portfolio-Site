@@ -23,7 +23,73 @@
 
 
 <body>
-    <nav class="navbar navbar-expand d-flex flex-column align-item-start active-nav nav-pills nav-pills-secondary"
+    <nav class="navbar2 ">
+        <div class="nav2-container container-fluid">
+            <div class="display-5 font-weight-bold">
+                <img class="logo" src="images/about-me-logo.png" alt="">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="bars" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                    class="svg-inline--fa fa-bars fa-w-14 fa-3x">
+                    <path fill="currentColor"
+                        d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+                        class=""></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark">
+            <ul class="navbar-nav d-flex flex-column w-100 justify-content-center">
+                <li class="nav-item-col w-100">
+                    <a href="#home-section" class="nav-link  pl-4 text-center">Home</a>
+                </li>
+                <li class="nav-item-col w-100">
+                    <a href="#projects-section" class="nav-link  pl-4 text-center">Projects</a>
+                </li>
+                <li class="nav-item-col w-100">
+                    <a href="#skills-section" class="nav-link  pl-4 text-center">Skills</a>
+                </li>
+                <li class="nav-item-col w-100">
+                    <a href="#contact-section" class="nav-link  pl-4 text-center">Contact</a>
+                </li>
+                <li class="nav-item-col nav2-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-linkedin">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-message-square">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path
+                            d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z"
+                            fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                        <path d="M256 56v120a32 32 0 0032 32h120M176 288h160M176 368h160" fill="none"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar1 navbar-expand d-flex flex-column align-item-start active-nav nav-pills nav-pills-secondary"
         id="sidebar">
         <a href="" class="navbar-brand text-light mt-5">
             <div class="display-5 font-weight-bold">
@@ -76,13 +142,13 @@
     <section class=" my-container active-cont ">
         <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-smooth-scroll="true" class="" tabindex="0">
             <div id="home-section"
-                class="min-vh-100 text-dark d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5 gap-xxl-0 ">
+                class="min-vh-100 text-dark d-flex flex-column flex-lg-row justify-content-center align-items-center col-md-12 gap-5 gap-xxl-0 ">
                 <!-- <div class="row"> -->
                 <div class="text col col-md-10 col-lg-6 col-xl-5 d-flex flex-column ">
                     <p class="first-line col col-md-12 col-xl-10  fw-bold">Hi, my name is </p>
                     <h2 class="second-line col col-md-12 col-xl-10  fw-bold">Jacky Peng</h2>
                     <!-- <h2 class="third-line col col-md-12 fw-bold ">currently building</h2> -->
-                    <p class="fourth-line col col-md-12 col-xl-10 fw-semibold"> I am an aspiring web developer focused
+                    <p class="fourth-line col col-md-12 col-xl-10"> I am an aspiring web developer focused
                         on creating
                         dynamic
                         websites
@@ -93,16 +159,17 @@
                         healthcare field in conjunction with my interest in programming to deliver objectives through
                         communication and teamwork. </p>
                     <button id="home-btn" type="button"
-                        class="btn col-md-6 col-lg-5 col-xl-4 btn-primary align-self-start m-lg-0">Contact
+                        class="btn col col-md-3 col-lg-4 col-xl-4 btn-primary align-self-start m-lg-0">Contact
                         Me</button>
                 </div>
                 <div class="col col-md-10 col-lg-6 col-xl-6 col-xxl-5">
-                    <img src="images/pic-of-me.jpg" class="img-fluid" alt="...">
+                    <img src="images/pic-of-me.jpg" class="header-pic img-fluid" alt="...">
                 </div>
                 <!-- </div> -->
             </div>
 
-            <div id="projects-section" class="min-vh-100 text-dark d-flex flex-column align-items-center">
+            <div id="projects-section"
+                class="min-vh-100 text-dark d-flex flex-column align-items-center justify-content-center">
                 <div class="row text projects-text">
                     <h1 class="portfolio-header fw-bold">My Portfolio</h1>
                     <p class=" fw-bold ">A group of projects that I have created independently since I began
@@ -151,9 +218,9 @@
             </div>
 
             <div id="skills-section"
-                class="min-vh-100 text-dark row d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                class="min-vh-100 row d-flex flex-column flex-xl-row align-items-center justify-content-center justify-content-lg-center">
 
-                <div class="skills-text text col col-md-10 col-lg-6 col-xl-4">
+                <div class="skills-text text col col-md-10 col-lg-12 col-xl-6">
                     <h2 class="fw-bold">Skills & Experience</h2>
                     <div class="experience">
                         <p>I began my journey a few months ago after discovering a passion for web development. As of
@@ -174,7 +241,7 @@
                             out!</p>
                     </div>
                 </div>
-                <div class="skills col col-xl-6  md-mt-0 md-pt-0">
+                <div class="skills col col-xl-6">
                     <div class="skill">
                         <p>Javascript</p>
                         <footer>
@@ -213,37 +280,22 @@
                     </div>
                 </div>
             </div>
-            <div id="contact-section" class="vh-100 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.
-                Ipsam facilis inventore
-                harum,
-                architecto libero recusandae porro doloremque sunt cum consectetur, autem, vitae ea nihil sapiente
-                voluptas
-                at aut suscipit eos? Sapiente quam culpa aliquam
-                itaque debitis nihil doloremque rem! Praesentium quae, facere nobis impedit quisquam aliquid maxime
-                error?
-                Totam eaque earum fuga aliquam sequi excepturi illum optio quas tempora ea! Eum perspiciatis
-                accusantium
-                distinctio eveniet consequatur
-                sint illo officiis? Saepe dolores fugiat rerum, voluptatem sunt culpa nihil accusantium voluptates
-                unde
-                hic
-                magnam quos est perspiciatis recusandae incidunt quod laborum vitae. Harum modi inventore ea odit
-                eaque
-                ut
-                maiores voluptate nihil
-                aspernatur voluptatibus exercitationem ipsa nam animi neque tempore, eligendi, repellendus
-                praesentium
-                ex
-                voluptatum? Magni laboriosam nemo, assumenda veniam aperiam eum! Eos, ipsum. Eum illo quos quo
-                tempora
-                excepturi reprehenderit numquam
-                voluptas! Blanditiis autem optio labore quisquam culpa, tempora minus eum repudiandae ea voluptatem
-                quia
-                obcaecati velit cum dolorum esse dolorem!
+            <div id="contact-section" class="vh-100 text-dark d-flex justify-content-center align-item-center">
+                <div class="contact-box align-self-center">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input id="firstname" type="text" class="input-field" placeholder="First Name">
+                        <input id="lastname" type="text" class="input-field" placeholder="Last Name">
+                        <input id="email" type="email" class="input-field" placeholder="E-mail Address">
+                        <input id="subject" type="text" class="input-field" placeholder="Subject">
+                        <textarea id="message" type="text" class="input-field text-box"
+                            placeholder="Message"></textarea>
+                        <button type="submit-button" class="btn">Submit</button>
+
+                    </form>
+                </div>
             </div>
         </div>
-        </div>
+
 
     </section>
 
