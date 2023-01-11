@@ -514,7 +514,9 @@ svg:hover {
     flex-direction: column;
     /* gap: .5rem; */
     /* justify-self: center; */
+    justify-content: center;
 }
+
 
 #contact-section button {
     /* margin-left: 20px !important; */
@@ -526,6 +528,11 @@ svg:hover {
     color: var(--nav-hover-color);
     width: 75%;
     align-self: center;
+    margin-top: 1rem;
+}
+
+.form-feedback {
+    text-align: center;
     margin-top: 1rem;
 }
 
